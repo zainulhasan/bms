@@ -71,11 +71,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDonor.Designer.cs">
+      <DependentUpon>addDonor.cs</DependentUpon>
+    </Compile>
     <Compile Include="addUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addUser.Designer.cs">
       <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bloodsummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bloodsummary.Designer.cs">
+      <DependentUpon>bloodsummary.cs</DependentUpon>
     </Compile>
     <Compile Include="dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +108,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="donorSummary.cs">
       <SubType>Form</SubType>
@@ -123,8 +145,14 @@
     <Compile Include="userSummary.Designer.cs">
       <DependentUpon>userSummary.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addDonor.resx">
+      <DependentUpon>addDonor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bloodsummary.resx">
+      <DependentUpon>bloodsummary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="donorSummary.resx">
       <DependentUpon>donorSummary.cs</DependentUpon>
@@ -190,6 +218,28 @@
     </None>
     <None Include="dbDataSet3.xss">
       <DependentUpon>dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet4.xsc">
+      <DependentUpon>dbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet4.xss">
+      <DependentUpon>dbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet5.xsc">
+      <DependentUpon>dbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet5.xss">
+      <DependentUpon>dbDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

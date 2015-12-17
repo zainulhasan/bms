@@ -49,6 +49,20 @@ namespace bms
             ad.Show();
         }
 
+        private void metroTile6_Click(object sender, EventArgs e)
+        {
+            addDonor ad = new addDonor();
+            this.Hide();
+            ad.Show();
+        }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            bloodsummary bs = new bloodsummary();
+            this.Hide();
+            bs.Show();
+        }
+
         
         
     }

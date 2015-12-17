@@ -97,6 +97,14 @@ namespace bms
                 using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\hassa\Source\Repos\bms\bms\bms\db.mdf;Integrated Security=True"))
                 {
                     conn.Open();
+                    string sql = "INSERT INTO [user] (name,username,password,email,phone,address,age) VALUES('"+name+"','"+username+"','"+password+"','"+email+"','"+phone+"','"+address+"','"+age+"')";
+                    SqlCommand cmd = new SqlCommand(sql,conn);
+                    MessageBox.Show(sql);
+                    cmd.ExecuteNonQuery();
+                    mainForm mf = new mainForm();
+                    this.Hide();
+                    mf.Show();
+                    MessageBox.Show("New User Added.");
                     conn.Close();
                     conn.Dispose();
                 }

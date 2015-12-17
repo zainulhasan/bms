@@ -141,6 +141,7 @@
             this.metroTile6.UseCustomBackColor = true;
             this.metroTile6.UseSelectable = true;
             this.metroTile6.UseTileImage = true;
+            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
             // 
             // metroTile7
             // 
@@ -187,6 +188,7 @@
             this.metroTile9.UseCustomBackColor = true;
             this.metroTile9.UseSelectable = true;
             this.metroTile9.UseTileImage = true;
+            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             // 
             // metroTile10
             // 
