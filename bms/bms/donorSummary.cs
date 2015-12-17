@@ -44,5 +44,12 @@ namespace bms
         {
             
         }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+            addDonor ad = new addDonor();
+            this.Hide();
+            ad.Show();
+        }
     }
 }

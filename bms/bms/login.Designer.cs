@@ -45,10 +45,10 @@
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.Location = new System.Drawing.Point(23, 100);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(194, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(198, 25);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "Please login to continue";
+            this.metroLabel1.Text = "Please login to continue.";
             this.metroLabel1.UseCustomBackColor = true;
             this.metroLabel1.UseCustomForeColor = true;
             this.metroLabel1.UseStyleColors = true;

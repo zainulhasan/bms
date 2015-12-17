@@ -45,5 +45,12 @@ namespace bms
             }
 
         }
+
+        private void metroTextButton2_Click(object sender, EventArgs e)
+        {
+            mainForm mf = new mainForm();
+            this.Hide();
+            mf.Show();
+        }
     }
 }

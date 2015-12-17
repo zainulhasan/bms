@@ -35,13 +35,14 @@
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.metroTextButton2 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTextButton1
             // 
             this.metroTextButton1.Image = null;
-            this.metroTextButton1.Location = new System.Drawing.Point(499, 85);
+            this.metroTextButton1.Location = new System.Drawing.Point(466, 85);
             this.metroTextButton1.Name = "metroTextButton1";
             this.metroTextButton1.Size = new System.Drawing.Size(97, 23);
             this.metroTextButton1.TabIndex = 5;
@@ -65,7 +66,7 @@
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(250, 85);
+            this.metroTextBox1.Location = new System.Drawing.Point(217, 85);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
@@ -82,7 +83,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(98, 85);
+            this.metroLabel1.Location = new System.Drawing.Point(65, 85);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(112, 19);
             this.metroLabel1.TabIndex = 3;
@@ -131,11 +132,24 @@
             this.metroGrid1.Size = new System.Drawing.Size(749, 243);
             this.metroGrid1.TabIndex = 6;
             // 
+            // metroTextButton2
+            // 
+            this.metroTextButton2.Image = null;
+            this.metroTextButton2.Location = new System.Drawing.Point(612, 85);
+            this.metroTextButton2.Name = "metroTextButton2";
+            this.metroTextButton2.Size = new System.Drawing.Size(97, 23);
+            this.metroTextButton2.TabIndex = 12;
+            this.metroTextButton2.Text = "Return Home";
+            this.metroTextButton2.UseSelectable = true;
+            this.metroTextButton2.UseVisualStyleBackColor = true;
+            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
+            // 
             // searchBlood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 439);
+            this.Controls.Add(this.metroTextButton2);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.metroTextButton1);
             this.Controls.Add(this.metroTextBox1);
@@ -155,5 +169,6 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroGrid metroGrid1;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton2;
     }
 }

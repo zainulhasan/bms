@@ -59,9 +59,8 @@
             this.error.AutoSize = true;
             this.error.Location = new System.Drawing.Point(307, 153);
             this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(144, 19);
+            this.error.Size = new System.Drawing.Size(0, 0);
             this.error.TabIndex = 36;
-            this.error.Text = "All Fields are Required.";
             // 
             // metroTextButton2
             // 
@@ -73,6 +72,7 @@
             this.metroTextButton2.Text = "Close";
             this.metroTextButton2.UseSelectable = true;
             this.metroTextButton2.UseVisualStyleBackColor = true;
+            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
             // 
             // metroTextButton1
             // 
@@ -327,7 +327,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(318, 119);
+            this.metroLabel1.Location = new System.Drawing.Point(318, 114);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(140, 25);
             this.metroLabel1.TabIndex = 19;

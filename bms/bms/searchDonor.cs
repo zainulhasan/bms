@@ -52,5 +52,12 @@ namespace bms
 
 
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            mainForm mf = new mainForm();
+            this.Hide();
+            mf.Show();
+        }
     }
 }

@@ -362,9 +362,8 @@
             this.error.AutoSize = true;
             this.error.Location = new System.Drawing.Point(312, 109);
             this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(144, 19);
+            this.error.Size = new System.Drawing.Size(0, 0);
             this.error.TabIndex = 18;
-            this.error.Text = "All Fields are Required.";
             // 
             // addUser
             // 

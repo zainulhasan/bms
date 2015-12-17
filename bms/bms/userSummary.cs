@@ -78,6 +78,13 @@ namespace bms
         private void metroLabel5_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+            addUser ad = new addUser();
+            this.Hide();
+            ad.Show();
         }  
     }
 }
