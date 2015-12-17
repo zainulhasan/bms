@@ -91,6 +91,7 @@
             this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile3.UseSelectable = true;
             this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // metroTile4
             // 
@@ -156,6 +157,7 @@
             this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile7.UseSelectable = true;
             this.metroTile7.UseTileImage = true;
+            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
             // 
             // metroTile8
             // 
@@ -198,13 +200,14 @@
             this.metroTile10.Name = "metroTile10";
             this.metroTile10.Size = new System.Drawing.Size(208, 91);
             this.metroTile10.TabIndex = 10;
-            this.metroTile10.Text = "User Sammary";
+            this.metroTile10.Text = "Search User";
             this.metroTile10.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTile10.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile10.TileImage")));
             this.metroTile10.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile10.UseCustomBackColor = true;
             this.metroTile10.UseSelectable = true;
             this.metroTile10.UseTileImage = true;
+            this.metroTile10.Click += new System.EventHandler(this.metroTile10_Click);
             // 
             // metroTile12
             // 
@@ -221,6 +224,7 @@
             this.metroTile12.UseCustomBackColor = true;
             this.metroTile12.UseSelectable = true;
             this.metroTile12.UseTileImage = true;
+            this.metroTile12.Click += new System.EventHandler(this.metroTile12_Click);
             // 
             // metroTile13
             // 

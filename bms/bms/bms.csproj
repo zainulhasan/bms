@@ -125,11 +125,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="donorSummary.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="donorSummary.Designer.cs">
       <DependentUpon>donorSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="findUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="findUser.Designer.cs">
+      <DependentUpon>findUser.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -145,6 +161,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchBlood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchBlood.Designer.cs">
+      <DependentUpon>searchBlood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchDonor.Designer.cs">
+      <DependentUpon>searchDonor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upDonor.Designer.cs">
+      <DependentUpon>upDonor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upUser.Designer.cs">
+      <DependentUpon>upUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="userSummary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +206,9 @@
     <EmbeddedResource Include="donorSummary.resx">
       <DependentUpon>donorSummary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="findUser.resx">
+      <DependentUpon>findUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +224,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="searchBlood.resx">
+      <DependentUpon>searchBlood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchDonor.resx">
+      <DependentUpon>searchDonor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upDonor.resx">
+      <DependentUpon>upDonor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upUser.resx">
+      <DependentUpon>upUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userSummary.resx">
       <DependentUpon>userSummary.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +304,28 @@
     </None>
     <None Include="dbDataSet5.xss">
       <DependentUpon>dbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet6.xsc">
+      <DependentUpon>dbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet6.xss">
+      <DependentUpon>dbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet7.xsc">
+      <DependentUpon>dbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet7.xss">
+      <DependentUpon>dbDataSet7.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -39,7 +39,9 @@ namespace bms
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
-
+            searchDonor ad = new searchDonor();
+            this.Hide();
+            ad.Show();
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
@@ -68,6 +70,34 @@ namespace bms
             addBlood ad = new addBlood();
             this.Hide();
             ad.Show();
+        }
+
+        private void metroTile7_Click(object sender, EventArgs e)
+        {
+            searchBlood sr = new searchBlood();
+            this.Hide();
+            sr.Show();
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            upUser up = new upUser();
+            this.Hide();
+            up.Show();
+        }
+
+        private void metroTile12_Click(object sender, EventArgs e)
+        {
+            upDonor ap = new upDonor();
+            this.Hide();
+            ap.Show();
+        }
+
+        private void metroTile10_Click(object sender, EventArgs e)
+        {
+            findUser fn = new findUser();
+            this.Hide();
+            fn.Show();
         }
 
         

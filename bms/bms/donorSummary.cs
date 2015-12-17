@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 
+
 namespace bms
 {
     public partial class donorSummary : MetroForm
@@ -37,6 +38,11 @@ namespace bms
         private void metroLabel5_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void metroLabel2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
