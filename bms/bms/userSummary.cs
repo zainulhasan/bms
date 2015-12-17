@@ -15,9 +15,9 @@ using System.IO;
 
 namespace bms
 {
-    public partial class userSammary : MetroForm
+    public partial class userSummary : MetroForm
     {
-        public userSammary()
+        public userSummary()
         {
             InitializeComponent();
         }
@@ -66,6 +66,18 @@ namespace bms
         private void metroPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+            mainForm mf = new mainForm();
+            this.Hide();
+            mf.Show();
+        }
+
+        private void metroLabel5_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
         }  
     }
 }

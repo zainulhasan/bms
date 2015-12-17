@@ -76,6 +76,7 @@
             this.metroTile2.UseCustomBackColor = true;
             this.metroTile2.UseSelectable = true;
             this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 

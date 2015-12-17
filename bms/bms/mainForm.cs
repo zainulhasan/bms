@@ -25,19 +25,28 @@ namespace bms
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            userSammary us = new userSammary();
+            userSummary us = new userSummary();
             this.Hide();
             us.Show();
         }
 
         private void metroTile4_Click(object sender, EventArgs e)
         {
-
+            donorSummary ds = new donorSummary();
+            this.Hide();
+            ds.Show();
         }
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            addUser ad = new addUser();
+            this.Hide();
+            ad.Show();
         }
 
         
