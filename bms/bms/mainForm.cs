@@ -63,6 +63,13 @@ namespace bms
             bs.Show();
         }
 
+        private void metroTile13_Click(object sender, EventArgs e)
+        {
+            addBlood ad = new addBlood();
+            this.Hide();
+            ad.Show();
+        }
+
         
         
     }

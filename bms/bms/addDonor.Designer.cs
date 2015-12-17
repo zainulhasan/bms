@@ -67,6 +67,7 @@
             this.metroTextButton2.Text = "Close";
             this.metroTextButton2.UseSelectable = true;
             this.metroTextButton2.UseVisualStyleBackColor = true;
+            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
             // 
             // metroTextButton1
             // 

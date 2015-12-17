@@ -237,6 +237,7 @@
             this.metroTile13.UseCustomBackColor = true;
             this.metroTile13.UseSelectable = true;
             this.metroTile13.UseTileImage = true;
+            this.metroTile13.Click += new System.EventHandler(this.metroTile13_Click);
             // 
             // mainForm
             // 

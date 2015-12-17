@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addBlood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBlood.Designer.cs">
+      <DependentUpon>addBlood.cs</DependentUpon>
+    </Compile>
     <Compile Include="addDonor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="userSummary.Designer.cs">
       <DependentUpon>userSummary.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addBlood.resx">
+      <DependentUpon>addBlood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addDonor.resx">
       <DependentUpon>addDonor.cs</DependentUpon>
     </EmbeddedResource>

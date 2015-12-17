@@ -7,34 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using MetroFramework.Forms;
+using System.Data.SqlClient;
+
 namespace bms
 {
-    public partial class addDonor : MetroForm
+    public partial class addBlood : MetroForm
     {
-        public addDonor()
+        public addBlood()
         {
             InitializeComponent();
         }
 
-        private void addDonor_Load(object sender, EventArgs e)
+        private void addBlood_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void metroTextButton1_Click(object sender, EventArgs e)
         {
-            if (error.Text != "") { error.Text = ""; }
-            string name = metroTextBox1.Text.Trim();
-            string bloodtype = metroTextBox2.Text.Trim();
-            string phone = metroTextBox3.Text.Trim();
-            string email = metroTextBox7.Text.Trim();
-            string address = metroTextBox4.Text.Trim();
-            string city = metroTextBox5.Text.Trim();
-            int age = Convert.ToInt32(metroTextBox6.Text.Trim());
+            string name = user_lab.Text;
+            string donorname = donor_lab.Text;
+            string phone = phone_lab.Text;
+            string email = email_lab.Text;
+            int age = int.Parse(age_lab.Text);
+            string bloodtype = blood_lab.Text;
+            string address = address_lab.Text;
+            string date = date_lab.Text;
 
-            if (name == "" || bloodtype == "" || city == "" || email == "" || address == "" || phone == "" || age <= 0)
+            if (error.Text != "") { error.Text = ""; }
+
+            if (name == "" || bloodtype == "" || date == "" || email == "" || address == "" || phone == "" || age <= 0)
             {
                 error.Text = "All Fields are Required.";
             }
@@ -43,7 +46,7 @@ namespace bms
                 using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\hassa\Source\Repos\bms\bms\bms\db.mdf;Integrated Security=True"))
                 {
                     conn.Open();
-                    string sql = "INSERT INTO [donor] (name,address,city,phone,email,age,bloodGroup) VALUES('" + name + "','" + address + "','" + city + "','" + phone + "','" + email + "','" + age + "','" + bloodtype + "')";
+                    string sql = "INSERT INTO [blood] (userName,address,donorName,phone,email,age,bloodGroup,date) VALUES('" + name + "','" + address + "','" + donorname + "','" + phone + "','" + email + "','" + age + "','" + bloodtype + "','"+date+"')";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     MessageBox.Show(sql);
                     cmd.ExecuteNonQuery();
@@ -56,13 +59,16 @@ namespace bms
                 }
             }
 
+
+
+
         }
 
         private void metroTextButton2_Click(object sender, EventArgs e)
         {
             mainForm mf = new mainForm();
             this.Hide();
-            mf.Show();
+             mf.Show();
         }
     }
 }
