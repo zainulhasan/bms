@@ -95,6 +95,7 @@
             this.metroTextButton2.Text = "Close";
             this.metroTextButton2.UseSelectable = true;
             this.metroTextButton2.UseVisualStyleBackColor = true;
+            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
             // 
             // metroTextButton1
             // 
@@ -349,7 +350,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(326, 95);
+            this.metroLabel1.Location = new System.Drawing.Point(310, 95);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(117, 25);
             this.metroLabel1.TabIndex = 38;

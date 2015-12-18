@@ -41,6 +41,11 @@
             this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile12 = new MetroFramework.Controls.MetroTile();
             this.metroTile13 = new MetroFramework.Controls.MetroTile();
+            this.day_lab = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroTile13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTile1
@@ -51,7 +56,7 @@
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(208, 91);
             this.metroTile1.TabIndex = 0;
-            this.metroTile1.Text = "User Sammary";
+            this.metroTile1.Text = "User Summary";
             this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTile1.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile1.TileImage")));
             this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,7 +106,7 @@
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(208, 91);
             this.metroTile4.TabIndex = 3;
-            this.metroTile4.Text = "Donor Sammary";
+            this.metroTile4.Text = "Donor Summary";
             this.metroTile4.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTile4.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile4.TileImage")));
             this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,6 +179,7 @@
             this.metroTile8.UseCustomBackColor = true;
             this.metroTile8.UseSelectable = true;
             this.metroTile8.UseTileImage = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
             // 
             // metroTile9
             // 
@@ -230,24 +236,56 @@
             // 
             this.metroTile13.ActiveControl = null;
             this.metroTile13.BackColor = System.Drawing.Color.DarkMagenta;
+            this.metroTile13.Controls.Add(this.metroLabel2);
+            this.metroTile13.Controls.Add(this.day_lab);
             this.metroTile13.Location = new System.Drawing.Point(556, 293);
             this.metroTile13.Name = "metroTile13";
             this.metroTile13.Size = new System.Drawing.Size(208, 91);
             this.metroTile13.TabIndex = 13;
-            this.metroTile13.Text = "Receive Blood";
             this.metroTile13.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTile13.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile13.TileImage")));
             this.metroTile13.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile13.UseCustomBackColor = true;
             this.metroTile13.UseSelectable = true;
-            this.metroTile13.UseTileImage = true;
             this.metroTile13.Click += new System.EventHandler(this.metroTile13_Click);
+            // 
+            // day_lab
+            // 
+            this.day_lab.AutoSize = true;
+            this.day_lab.Location = new System.Drawing.Point(77, 15);
+            this.day_lab.Name = "day_lab";
+            this.day_lab.Size = new System.Drawing.Size(21, 19);
+            this.day_lab.TabIndex = 1;
+            this.day_lab.Text = "14";
+            this.day_lab.UseCustomBackColor = true;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(19, 52);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(116, 19);
+            this.metroLabel2.TabIndex = 2;
+            this.metroLabel2.Text = "12 December 2015";
+            this.metroLabel2.UseCustomBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(762, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 446);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroTile13);
             this.Controls.Add(this.metroTile12);
             this.Controls.Add(this.metroTile10);
@@ -266,6 +304,9 @@
             this.Resizable = false;
             this.Text = "Blood Bank Management System";
             this.Load += new System.EventHandler(this.mainForm_Load);
+            this.metroTile13.ResumeLayout(false);
+            this.metroTile13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,5 +325,8 @@
         private MetroFramework.Controls.MetroTile metroTile10;
         private MetroFramework.Controls.MetroTile metroTile12;
         private MetroFramework.Controls.MetroTile metroTile13;
+        private MetroFramework.Controls.MetroLabel day_lab;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

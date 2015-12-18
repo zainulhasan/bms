@@ -26,5 +26,12 @@ namespace bms
             //this.bloodTableAdapter.Fill(this.dbDataSet4.blood);
 
         }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+            mainForm mf = new mainForm();
+            this.Hide();
+            mf.Show();
+        }
     }
 }

@@ -35,15 +35,11 @@
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.dbDataSet4 = new bms.dbDataSet4();
             this.bloodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bloodTableAdapter = new bms.dbDataSet4TableAdapters.bloodTableAdapter();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.dbDataSet5 = new bms.dbDataSet5();
-            this.bloodBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bloodTableAdapter1 = new bms.dbDataSet5TableAdapters.bloodTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,12 +49,15 @@
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloodBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dbDataSet5 = new bms.dbDataSet5();
+            this.bloodTableAdapter1 = new bms.dbDataSet5TableAdapters.bloodTableAdapter();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel2
@@ -66,7 +65,6 @@
             this.metroPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             this.metroPanel2.Controls.Add(this.metroLabel5);
             this.metroPanel2.Controls.Add(this.metroLabel3);
-            this.metroPanel2.Controls.Add(this.metroLabel2);
             this.metroPanel2.Controls.Add(this.metroLabel1);
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
@@ -85,7 +83,7 @@
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel5.ForeColor = System.Drawing.Color.White;
-            this.metroLabel5.Location = new System.Drawing.Point(330, 5);
+            this.metroLabel5.Location = new System.Drawing.Point(221, 5);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(30, 19);
             this.metroLabel5.Style = MetroFramework.MetroColorStyle.Lime;
@@ -100,7 +98,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel3.ForeColor = System.Drawing.Color.White;
-            this.metroLabel3.Location = new System.Drawing.Point(217, 5);
+            this.metroLabel3.Location = new System.Drawing.Point(108, 5);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(91, 19);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Lime;
@@ -109,21 +107,7 @@
             this.metroLabel3.UseCustomBackColor = true;
             this.metroLabel3.UseCustomForeColor = true;
             this.metroLabel3.UseStyleColors = true;
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.ForeColor = System.Drawing.Color.White;
-            this.metroLabel2.Location = new System.Drawing.Point(106, 5);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(83, 19);
-            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Lime;
-            this.metroLabel2.TabIndex = 6;
-            this.metroLabel2.Text = "Print Report";
-            this.metroLabel2.UseCustomBackColor = true;
-            this.metroLabel2.UseCustomForeColor = true;
-            this.metroLabel2.UseStyleColors = true;
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
             // 
             // metroLabel1
             // 
@@ -209,20 +193,6 @@
             this.metroGrid1.Size = new System.Drawing.Size(1004, 150);
             this.metroGrid1.TabIndex = 9;
             // 
-            // dbDataSet5
-            // 
-            this.dbDataSet5.DataSetName = "dbDataSet5";
-            this.dbDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bloodBindingSource1
-            // 
-            this.bloodBindingSource1.DataMember = "blood";
-            this.bloodBindingSource1.DataSource = this.dbDataSet5;
-            // 
-            // bloodTableAdapter1
-            // 
-            this.bloodTableAdapter1.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -278,6 +248,20 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
+            // bloodBindingSource1
+            // 
+            this.bloodBindingSource1.DataMember = "blood";
+            this.bloodBindingSource1.DataSource = this.dbDataSet5;
+            // 
+            // dbDataSet5
+            // 
+            this.dbDataSet5.DataSetName = "dbDataSet5";
+            this.dbDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bloodTableAdapter1
+            // 
+            this.bloodTableAdapter1.ClearBeforeFill = true;
+            // 
             // bloodsummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,8 +277,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,7 +288,6 @@
         private MetroFramework.Controls.MetroPanel metroPanel2;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private dbDataSet4 dbDataSet4;
         private System.Windows.Forms.BindingSource bloodBindingSource;

@@ -73,10 +73,10 @@
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.Location = new System.Drawing.Point(41, 220);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(91, 25);
+            this.metroLabel3.Size = new System.Drawing.Size(101, 25);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroLabel3.TabIndex = 2;
-            this.metroLabel3.Text = "Passowrd: ";
+            this.metroLabel3.Text = "Passoword: ";
             this.metroLabel3.UseCustomBackColor = true;
             this.metroLabel3.UseCustomForeColor = true;
             this.metroLabel3.UseStyleColors = true;

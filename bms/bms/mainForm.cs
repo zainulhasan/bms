@@ -20,7 +20,38 @@ namespace bms
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-           
+            DateTime now = DateTime.Now;
+            string date = now.GetDateTimeFormats('f')[0];
+            metroLabel2.Text = date;
+            day_lab.Text = date;
+            int d = (int)System.DateTime.Now.DayOfWeek;
+            if (d == 0)
+            {
+                day_lab.Text = "Sunday";
+            }
+            else if (d == 1)
+            {
+                day_lab.Text = "Monday";
+            }else if(d==2){
+                day_lab.Text = "Tuesday";
+            }
+            else if (d == 3)
+            {
+                day_lab.Text="Wednesday";
+
+            }else if(d==4){
+
+                day_lab.Text = "Thursday";
+            }
+            else if (d == 5)
+            {
+                day_lab.Text = "Friday";
+            }
+            else
+            {
+                day_lab.Text = "Satureday";
+            }
+            
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
@@ -67,9 +98,7 @@ namespace bms
 
         private void metroTile13_Click(object sender, EventArgs e)
         {
-            addBlood ad = new addBlood();
-            this.Hide();
-            ad.Show();
+            
         }
 
         private void metroTile7_Click(object sender, EventArgs e)
@@ -98,6 +127,18 @@ namespace bms
             findUser fn = new findUser();
             this.Hide();
             fn.Show();
+        }
+
+        private void metroTile8_Click(object sender, EventArgs e)
+        {
+            addBlood ad = new addBlood();
+            this.Hide();
+            ad.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
         }
 
         
